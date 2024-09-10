@@ -1,0 +1,128 @@
+/* Container for the contact heading section */
+.contactHeading {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 100px;
+}
+
+/* Styling for the text in the contact page section */
+.contactPageText {
+    padding: 25px 0;
+}
+
+/* Styling for headings within the contact page text */
+.contactPageText h2 {
+    font-size: 20px; /* Set the font size for headings */
+    font-weight: 800; /* Bold font weight */
+    padding-bottom: 5px; /* Space below the heading */
+}
+
+/* Styling for links in the contact page text */
+.contactPageText a {
+    color: rgb(56, 53, 53); /* Link color */
+}
+
+/* Styling for links on hover */
+.contactPageText a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container for the contact banner */
+.contactBanner {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 87%; /* Maximum width of the banner */
+    border-radius: 40px; /* Rounded corners */
+    padding-bottom: 30px; /* Space below the banner */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+}
+
+/* Styling for the text within the contact banner */
+.contactBannerText h2 {
+    font-size: 24px; /* Font size for banner heading */
+    font-weight: 800; /* Bold font weight */
+    padding: 30px 0 5px 0; /* Space around the heading */
+    color: white; /* White text color */
+}
+
+/* Styling for paragraphs within the contact banner */
+.contactBannerText p {
+    color: white; /* White text color */
+}
+
+/* Styling for the contact form */
+.form {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-around; /* Space items evenly */
+    margin: 20px auto; /* Center form horizontally */
+}
+
+/* Styling for input fields in the contact form */
+.detailcontact input {
+    width: 480px; /* Set width of input fields */
+    height: 50px; /* Set height of input fields */
+    border-radius: 50px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below input fields */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding inside input fields */
+}
+
+/* Styling for input fields on focus */
+.detailcontact input:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1px solid #ccc; /* Add a subtle border on focus */
+    box-shadow: none; /* Remove shadow */
+}
+
+/* Styling for textarea fields in the contact form */
+.textArea textarea {
+    width: 480px; /* Set width of textarea */
+    height: 200px; /* Set height of textarea */
+    border-radius: 50px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below textarea */
+    border: none; /* Remove default border */
+    padding: 20px 20px; /* Add padding inside textarea */
+    resize: none; /* Prevent resizing */
+}
+
+/* Styling for textarea fields on focus */
+.textArea textarea:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1px solid #ccc; /* Add a subtle border on focus */
+    box-shadow: none; /* Remove shadow */
+}
+
+/* Styling for the submit button */
+.formBtn {
+    background-color: #e5750f; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 0.6rem 3rem; /* Add padding */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styling for the submit button on hover */
+.formBtn:hover {
+    background-color: #fff; /* Change background color */
+    color: #e5750f; /* Change text color */
+    border: 1px solid #e5750f; /* Add border */
+    transition: 1s; /* Smooth transition effect */
+}
+
+@media screen and (max-width: 600px) {
+    .detailcontact input {
+        width: 300px; /* Set width of input fields */
+        height: 50px; /* Set height of input fields */
+        
+    }
+
+    .textArea textarea {
+        width: 300px; /* Set width of textarea */
+        height: 200px; /* Set height of textarea */
+    
+    }
+}

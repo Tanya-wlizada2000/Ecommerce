@@ -1,0 +1,149 @@
+/* General Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background for the navbar */
+    color: #070707; /* Text color */
+    padding: 1rem; /* Padding inside the navbar */
+    position: relative; /* Relative positioning for positioning children */
+    max-width: 1440px; /* Maximum width of the navbar */
+    margin: 0 auto; /* Centering the navbar horizontally */
+}
+
+/* Navbar Container: Centers items and spaces them out */
+.navbar-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+}
+
+/* Navbar Logo Styles */
+.navbar-logo {
+    font-size: 1.5rem; /* Font size for the logo */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Navbar Toggler for Mobile */
+.navbar-toggler {
+    display: none; /* Hidden by default; shown on mobile */
+    background: none; /* No background for the button */
+    border: none; /* No border for the button */
+    font-size: 1.5rem; /* Font size for the toggler icon */
+    color: #fff; /* Text color for the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* Relative positioning for absolute children */
+}
+
+/* Hamburger Icon Styles */
+.hamburger-icon {
+    display: flex; /* Flexbox layout for hamburger lines */
+    flex-direction: column; /* Stacks lines vertically */
+    gap: 4px; /* Space between lines */
+}
+
+/* Individual lines of the hamburger icon */
+.hamburger-icon .line {
+    background-color: #fff; /* Line color */
+    height: 2px; /* Thickness of the lines */
+    width: 25px; /* Width of the lines */
+}
+
+/* Close Icon Styles */
+.close-icon {
+    font-size: 2rem; /* Font size for the close icon */
+}
+
+/* Phone Icon Styles (e.g., for a contact link) */
+.phone-icone {
+    color: #e5750f; /* Phone icon color */
+}
+
+.phone-icone:hover {
+    color: #ffffff; /* Phone icon color */
+    transition: 1s;
+}
+
+/* Navbar Menu Styles */
+.navbar-menu {
+    display: flex; /* Flexbox layout for menu items */
+    gap: 1rem; /* Space between items */
+}
+
+/* Individual Navbar Item Styles */
+.navbar-item {
+    color: #ffffff; /* Text color for items */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0.5rem; /* Padding around the items */
+    position: relative; /* Relative positioning for dropdowns */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover State for Navbar Items */
+.navbar-item:hover {
+    background-color: rgba(0, 51, 102, 0.5); /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    border-radius: 10px; /* Rounded corners on hover */
+    transition: 1s; /* Smooth transition for hover effect */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative; /* Relative positioning for dropdown menu */
+}
+
+/* Hidden Dropdown Menu by default */
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Absolute positioning for dropdown */
+    background-color: rgba(0, 51, 102); /* Background color for dropdown */
+    top: 100%; /* Position directly below the dropdown trigger */
+    left: 0; /* Align to the left of the dropdown trigger */
+    min-width: 160px; /* Minimum width of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+    border-radius: 10px; /* Rounded corners for dropdown */
+}
+
+/* Individual Dropdown Item Styles */
+.dropdown-item {
+    color: #ffffff; /* Text color for dropdown items */
+    font-weight: 500; /* Font weight for dropdown items */
+    padding: 12px 16px; /* Padding inside dropdown items */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make dropdown items block elements */
+}
+
+/* Hover State for Dropdown Items */
+.dropdown-item:hover {
+    background-color: rgba(82, 121, 160, 0.5); /* Background color on hover */
+    transition: 1s; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Rounded corners on hover */
+}
+
+/* Show Dropdown Menu on Parent Hover */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown menu on hover */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu by default on small screens */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width for the menu */
+        position: absolute; /* Absolute positioning for dropdown menu */
+        top: 60px; /* Position below the navbar */
+        left: 0; /* Align to the left of the navbar */
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background for mobile menu */
+        padding: 1rem; /* Padding inside the menu */
+        z-index: 1000; /* Ensure menu is above other elements */
+    }
+
+    /* Show mobile menu when active */
+    .navbar-menu.active {
+        display: flex; /* Display the menu when active */
+    }
+
+    /* Show the navbar-toggler button on small screens */
+    .navbar-toggler {
+        display: block; /* Show toggler button */
+    }
+}

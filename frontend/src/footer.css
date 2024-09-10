@@ -1,0 +1,78 @@
+/* Container for the footer items */
+.footerItem {
+  margin-top: 100px; /* Add space above the footer */
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 50px; /* Add padding around the footer content */
+}
+
+/* Styling for the logo text section */
+.logoText h4 {
+  font-size: 18px; /* Set font size for h4 elements */
+  font-weight: 400; /* Set font weight to normal */
+  color: #1C1C1C; /* Set text color to a dark gray */
+  padding: 20px 0; /* Add vertical padding */
+}
+
+.logoText p {
+  font-size: 14px; /* Set font size for paragraph text */
+}
+
+.logoText h2 {
+  font-size: 20px; /* Set font size for h2 elements */
+  font-weight: bold; /* Set font weight to bold */
+  color: #024e9d; /* Set text color to a shade of blue */
+  padding: 20px 0; /* Add vertical padding */
+}
+
+/* Styling for links within the logoText section */
+.logoText ul li a {
+  color: #1C1C1C; /* Set link color to dark gray */
+  padding: 20px 0; /* Add vertical padding to links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.logoText ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styling for contact links */
+.contact a {
+  color: #1C1C1C; /* Set link color to dark gray */
+  padding: 20px 0; /* Add vertical padding to links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styling for the last part of the footer */
+.lastpart {
+  margin: 0 auto; /* Center the last part of the footer horizontally */
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items to the center */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 20px; /* Add padding around the content */
+  color: white; /* Set text color to white */
+}
+
+/* Styling for links within the lastpart section */
+.lastpart a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 14px; /* Set font size for links */
+}
+
+.lastpart a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 900px) {
+  .footerItem {
+      flex-wrap: wrap; /* Wrap items to the next line on small screens */
+      margin: 30px auto; /* Adjust margin for smaller screens */
+  }
+}

@@ -1,0 +1,63 @@
+/* Container for the section with background gradient */
+.advan {
+    margin: 0 auto; /* Center container horizontally */
+    margin-top: 100px; /* Add top margin */
+    max-width: 1440px; /* Set maximum width of the container */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Background gradient from dark blue to light blue */
+}
+
+/* Heading section within the .advan container */
+.advanHeading {
+    text-align: center; /* Center align text */
+    font-size: 26px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    margin: 70px auto; /* Add margin and center horizontally */
+    color: white; /* Set text color to white */
+}
+
+/* Additional padding for the h1 element within .advanHeading */
+.advanHeading h1 {
+    padding-top: 50px; /* Add top padding */
+}
+
+/* Container for all the advantage cards, using flexbox layout */
+.AllAdvanCarts {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-around; /* Distribute items evenly with space around */
+}
+
+/* Individual advantage card styling */
+.advanCarts {
+    margin: 0 auto; /* Center card horizontally */
+    padding: 10px 0 60px 0; /* Add vertical padding */
+}
+
+/* Container for images within the advantage cards */
+.advanCartsImg {
+    text-align: center; /* Center align text and images */
+}
+
+/* Styling for images within the advantage cards */
+.advanCartsImg img {
+    width: 90px; /* Set image width */
+    height: 90px; /* Set image height */
+    background: rgb(255, 255, 255); /* Set background color to white */
+    border-radius: 50%; /* Make images circular */
+    padding: 10px 0; /* Add vertical padding */
+}
+
+/* Text styling within the advantage cards */
+.advanCartsText {
+    text-align: center; /* Center align text */
+    color: white; /* Set text color to white */
+    padding-top: 30px; /* Add top padding */
+    font-size: 18px; /* Set font size */
+}
+
+/* Responsive design for screens smaller than 900px */
+@media screen and (max-width: 900px) {
+    .AllAdvanCarts {
+        flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    }
+}

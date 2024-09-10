@@ -1,0 +1,140 @@
+/* Styles for the slider container */
+.slider-container {
+  max-width: 1440px; /* Maximum width of the slider container */
+  margin: 0 auto; /* Center the container horizontally */
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+}
+
+/* Styles for the container holding social media icons */
+.iconsMedia {
+  text-align: center; /* Center align the icons */
+}
+
+/* Styles for social media links */
+.iconsMedia a {
+  color: #fff; /* Default icon color */
+  padding: 5px; /* Padding around the icons */
+}
+
+/* Styles for social media links on hover */
+.iconsMedia a:hover {
+  color: #e5750f; /* Change color on hover */
+  transition: 1s;
+}
+
+/* Styles for each banner item */
+.bannerItem {
+  display: flex; /* Flexbox layout for banner items */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin: 0 auto; /* Center the banner items horizontally */
+  padding: 2rem 0; /* Vertical padding */
+  color: white; /* Text color */
+  font-weight: 400; /* Default font weight */
+}
+
+/* Styles for images in banner items */
+.bannerItem img {
+  width: 30%; /* Set image width to 30% of the container */
+}
+
+/* Styles for headings in banner items */
+.bannerItem h1 {
+  font-size: 36px; /* Font size for headings */
+  font-weight: bold; /* Bold font weight */
+  
+  
+}
+
+/* Styles for paragraphs in banner items */
+.bannerItem p {
+  font-size: 20px; /* Font size for paragraphs */
+  font-weight: 600; /* Font weight for paragraphs */
+  margin: 20px auto 60px auto; /* Vertical margin for spacing */
+  width: 500px; /* Set width for paragraphs */
+}
+
+/* Styles for navbar buttons */
+.navbar-button {
+  background-color: #e5750f; /* Button background color */
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove border */
+  padding: 0.6rem 3rem; /* Padding inside the button */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for navbar buttons on hover */
+.navbar-button:hover {
+  background-color: #fff; /* Button background color on hover */
+  color: #e5750f; /* Text color on hover */
+  border: 1px solid #e5750f; /* Border on hover */
+  transition: 1s; /* Smooth transition for hover effect */
+}
+
+/* Custom styles for the react-slick slider dots */
+
+/* Hide default dot styles */
+.slick-dots {
+  bottom: 10px; /* Position of dots */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Size of the dots */
+  color: rgba(255, 255, 255, 0.75); /* Default color of dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e5750f; /* Color of active dot */
+}
+
+/* Custom styles for dots container */
+.slick-dots {
+  display: flex !important; /* Ensure flexbox layout */
+  justify-content: center; /* Center the dots horizontally */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots li button {
+  border-radius: 50%; /* Make dots round */
+}
+
+/* Responsive styles for screens 900px and below */
+@media screen and (max-width: 900px) {
+  .bannerItem img {
+      width: 400px; /* Adjust image width for smaller screens */
+  }
+  .bannerItem h1 {
+      padding-top: 20px ;
+  }
+  .bannerItem p {
+      font-size: 20px; /* Adjust font size for paragraphs */
+      font-weight: 600; /* Maintain font weight */
+      margin: 20px auto 60px auto; /* Adjust margin */
+      width: 400px; /* Adjust paragraph width */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bannerItem img {
+      width: 300px; /* Adjust image width for smaller screens */
+  }
+  .bannerItem h1 {
+      padding-top: 30px ;
+  }
+  .bannerItem p {
+      font-size: 15px; /* Adjust font size for paragraphs */
+      font-weight: 600; /* Maintain font weight */
+      margin: 20px auto 60px auto; /* Adjust margin */
+      width: 350px; /* Adjust paragraph width */
+  }
+
+  .navbar-button {
+   margin-bottom: 30px;
+  }
+}
+

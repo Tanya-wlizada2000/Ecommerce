@@ -1,0 +1,81 @@
+/* Container for the 'About' section, centered with max-width and margin adjustments */
+.about {
+  max-width: 1440px;
+  margin: 100px auto;
+}
+
+/* Styling for the text section in the 'About' section */
+.aboutText {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Space items evenly */
+  gap: 50px; /* Space between items */
+  color: rgb(63, 57, 57); /* Text color */
+  padding: 30px; /* Padding around the content */
+}
+
+/* Styling for paragraph elements within '.Text' */
+.Text p {
+  padding: 30px; /* Padding around paragraphs */
+  color: rgb(63, 57, 57); /* Text color */
+}
+
+/* Styling for heading 2 elements within '.Text' */
+.Text h2 {
+  padding: 10px 30px; /* Padding around the heading */
+  color: #024e9d; /* Heading text color */
+  font-size: 20px; /* Font size */
+}
+
+/* Container for the image and text in the 'About' section */
+.aboutImgText {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Space items evenly */
+  margin: 100px auto; /* Centered with margin */
+  padding: 30px; /* Padding around the content */
+}
+
+/* Styling for images within the '.aboutImg' container */
+.aboutImg img {
+  width: 500px; /* Image width */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Container for the last section of the 'About' page */
+.lastAbout {
+  max-width: 1440px;
+  margin: 0 auto; /* Centered with margin */
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 50px; /* Space between items */
+}
+
+/* Styling for text content within '.textlast' */
+.textlast {
+  text-align: start; /* Align text to the start */
+}
+
+/* Padding for paragraph elements within '.textlast' */
+.textlast p {
+  text-align: start; /* Align text to the start */
+  padding: 20px 0; /* Padding around paragraphs */
+}
+
+/* Responsive design adjustments for screens 980px wide or less */
+@media screen and (max-width: 980px) {
+  .aboutImgText {
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+
+  .lastAbout {
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+
+  .aboutImg img {
+    width: 300px; /* Adjust image width for smaller screens */
+    border-radius: 20px; /* Keep rounded corners */
+  }
+}

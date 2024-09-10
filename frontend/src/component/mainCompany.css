@@ -1,0 +1,76 @@
+/* Main container for items with flexible layout */
+.mainItem {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-around; /* Space items evenly */
+    margin: 100px auto !important; /* Center container horizontally with a margin of 100px on top and bottom */
+}
+
+/* Text container styling */
+.mainText {
+    padding: 50px; /* Add padding around the text */
+}
+
+/* Heading 2 styles within .mainText */
+.mainText h2 {
+    font-size: 36px; /* Set font size */
+    font-weight: bold; /* Make font bold */
+    color: black; /* Text color black */
+}
+
+/* Heading 3 styles within .mainText */
+.mainText h3 {
+    font-size: 18px; /* Set font size */
+    font-weight: 600; /* Semi-bold font weight */
+    color: rgb(65, 62, 62); /* Dark grey color */
+    padding: 10px 0 20px 0; /* Vertical padding for spacing */
+}
+
+/* Paragraph styles within .mainText */
+.mainText p {
+    font-size: 16px; /* Set font size */
+    font-weight: 400; /* Normal font weight */
+    color: rgb(65, 62, 62); /* Dark grey color */
+    width: 80%; /* Set width to 80% of the container */
+}
+
+/* Container for company cards with flexible layout */
+.companyCards {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space cards evenly */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Individual card styling */
+.cards {
+    padding: 1rem; /* Add padding inside cards */
+    margin: 0 auto; /* Center cards horizontally */
+}
+
+/* Styling for images within company cards */
+.company-img img {
+    width: 90px; /* Set image width */
+    height: 90px; /* Set image height */
+    padding: 10px 0; /* Vertical padding */
+    background: rgb(255, 255, 255); /* White background */
+    border-radius: 50%; /* Circular images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+/* Hover effect for images within company cards */
+.company-img img:hover { 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* Increase shadow size on hover */
+    transition: 1s; /* Smooth transition for the shadow effect */
+}
+
+/* Heading 2 styles within company-details */
+.company-details h2 {
+    color: #024e9d; /* Set text color to a shade of blue */
+}
+
+/* Responsive design for screens smaller than 900px */
+@media screen and (max-width: 900px) {
+    .mainItem {
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines on smaller screens */
+    }
+}

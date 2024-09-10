@@ -1,0 +1,29 @@
+/* Container for the details section */
+.details {
+  max-width: 1440px; /* Set the maximum width of the container */
+  text-align: center; /* Center-align the text within the container */
+  margin: 100px auto; /* Center the container horizontally with a top and bottom margin */
+}
+
+/* Styling for the main heading in the details section */
+.details h1 {
+  color: #024e9d; /* Set the color of the heading */
+  padding-block: 50px; /* Add vertical padding (top and bottom) to the heading */
+}
+
+/* Styling for images within the details section */
+.details img {
+  width: 500px; /* Set the width of the images */
+  border-radius: 10px; /* Round the corners of the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow around the images */
+}
+
+/* Styling for paragraphs within the details section */
+.details p {
+  font-size: 15px; /* Set the font size for paragraphs */
+  color: rgb(45, 45, 45); /* Set the color of the text */
+  font-weight: 400; /* Set the font weight */
+  padding: 20px; /* Add padding around the text */
+  width: 400px; /* Set the width of the paragraphs */
+  margin: 0 auto; /* Center the paragraphs horizontally */
+}

@@ -1,0 +1,80 @@
+/* Style for the main container of product items */
+.productItem {
+    margin: 100px auto; /* Center the container horizontally with 100px margin on top and bottom */
+    max-width: 1440px; /* Limit the maximum width of the container */
+}
+
+/* Style for the heading of product items */
+.productHeading {
+    text-align: center; /* Center-align the heading text */
+    font-size: 36px; /* Set font size for the heading */
+    font-weight: bold; /* Make the heading text bold */
+    margin: 70px auto; /* Center the heading horizontally with 70px margin on top and bottom */
+}
+
+/* Style for the container of product cards */
+.cartspro {
+    display: flex; /* Use flexbox for layout */
+    text-align: center; /* Center-align text within each card */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-around; /* Distribute space around items */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 30px; /* Set spacing between items */
+    margin: 100px auto; /* Center the container horizontally with 100px margin on top and bottom */
+    max-width: 1440px; /* Limit the maximum width of the container */
+}
+
+/* Style for individual product cards */
+.productCardsItem {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically center */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect to the card */
+    width: 500px; /* Set a fixed width for the card */
+}
+
+/* Hover effect for product cards */
+.productCardsItem:hover {
+    margin-top: -20px; /* Slightly move the card up on hover */
+    transition: 1s; /* Smooth transition for the hover effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Increase shadow depth on hover */
+}
+
+/* Style for images within product cards */
+.productCardsItem img {
+    width: 200px; /* Set fixed width for the image */
+    height: 300px; /* Set fixed height for the image */
+}
+
+/* Style for the text container within product cards */
+.cartsText {
+    padding: 30px; /* Add padding around the text */
+}
+
+/* Style for headings within the text container */
+.cartsText h2 {
+    color: #024e9d; /* Set color for the heading text */
+    font-size: 20px; /* Set font size for the heading */
+}
+
+/* Style for paragraphs within the text container */
+.cartsText p {
+    color: black; /* Set color for the paragraph text */
+    font-size: 15px; /* Set font size for the paragraph text */
+}
+
+/* Media query for screens smaller than 900px */
+@media screen and (max-width: 900px) {
+    .cartspro {
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    }
+
+    .productCardsItem {
+        width: 350px; /* Adjust width of the card for smaller screens */
+    }
+    
+    .productCardsItem img {
+        width: 100px; /* Adjust width of the image for smaller screens */
+        height: 200px; /* Adjust height of the image for smaller screens */
+    }
+}
