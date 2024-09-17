@@ -1,13 +1,17 @@
 /* Container for the contact heading section */
 .contactHeading {
     margin: 0 auto;
-    max-width: 1440px;
     padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Styling for the text in the contact page section */
 .contactPageText {
-    padding: 25px 0;
+    padding-top: 0px ;
+    padding-bottom: 25px ;
+    
 }
 
 /* Styling for headings within the contact page text */
@@ -50,6 +54,7 @@
     color: white; /* White text color */
 }
 
+
 /* Styling for the contact form */
 .form {
     display: flex; /* Flexbox layout */
@@ -81,7 +86,7 @@
 .textArea textarea {
     width: 480px; /* Set width of textarea */
     height: 200px; /* Set height of textarea */
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     margin-bottom: 20px; /* Space below textarea */
     border: none; /* Remove default border */
     padding: 20px 20px; /* Add padding inside textarea */
@@ -125,4 +130,14 @@
         height: 200px; /* Set height of textarea */
     
     }
+
+    .map iframe{
+        width: 300px;
+    }
+
+    .contactHeading {
+        
+        padding-left: 70px;
+       
+    
 }

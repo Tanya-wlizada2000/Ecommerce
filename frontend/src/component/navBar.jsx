@@ -2,8 +2,11 @@ import { useState } from "react";
 import "./navBar.css";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import { IoCallOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { TiSocialInstagramCircular } from "react-icons/ti"; // Importing Instagram icon
+import { PiFacebookLogoBold } from "react-icons/pi"; // Importing Facebook icon
+import { TiSocialLinkedinCircular } from "react-icons/ti"; // Importing LinkedIn icon
+import { NavbarButton } from "./navbarButton";
 
 // Navebar
 const Navbar = () => {
@@ -18,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Logo
+          <img src="/image.png" alt="" width={50}/>
         </Link>
         <div className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
           <Link to="/" className="navbar-item">
@@ -31,9 +34,9 @@ const Navbar = () => {
                 <Link to="/Incom" className="dropdown-item">
                   About the company
                 </Link>
-                <Link to="/Certificate" className="dropdown-item">
+               {/* <Link to="/Certificate" className="dropdown-item">
                   Certificate
-                </Link>
+                </Link>*/}
               </div>
             )}
           </div>
@@ -42,10 +45,19 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="dropdown-menu">
                 <Link to="/service1" className="dropdown-item">
-                  Roll packaging
+                Stand Up Pouch
                 </Link>
                 <Link to="/service2" className="dropdown-item">
-                  Ready-made packaging
+                Spout Pouch
+                </Link>
+                <Link to="/service3" className="dropdown-item">
+                Gusseted Pouch
+                </Link>
+                <Link to="/service4" className="dropdown-item">
+                Roll Film
+                </Link>
+                <Link to="/service5" className="dropdown-item">
+                Shaped & Transparent
                 </Link>
               </div>
             )}
@@ -53,11 +65,28 @@ const Navbar = () => {
           <Link to="/Contact" className="navbar-item">
             Contact
           </Link>
+          
         </div>
-        {/* The Icons */}
-        <Link to="/Contact" className="phone-icone">
-          <IoCallOutline size={40} className="icone" />
+        <div className="iconsMedia">
+        {/* Instagram icon with a link */}
+        <Link to="https://www.instagram.com/doypack2023?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+          <TiSocialInstagramCircular size={30} />
         </Link>
+        {/* Facebook icon with a link */}
+        <Link to="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <PiFacebookLogoBold size={30} />
+        </Link>
+        {/* LinkedIn icon with a link */}
+        <Link to="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <TiSocialLinkedinCircular size={35} />
+        </Link>
+         {/* The Icons */}
+         <Link to="/Contact" className="phone-icone">
+          < NavbarButton title={"Contact"}/>
+        </Link>
+      </div>
+        
+       
         <button className="navbar-toggler" onClick={toggleMenu}>
           {isMenuOpen ? (
             <span className="close-icon">

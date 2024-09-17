@@ -1,21 +1,53 @@
 /* Container for the details section */
 .details {
-  max-width: 1440px; /* Set the maximum width of the container */
   text-align: center; /* Center-align the text within the container */
   margin: 100px auto; /* Center the container horizontally with a top and bottom margin */
 }
 
+.detItem{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+
+}
+
+
 /* Styling for the main heading in the details section */
-.details h1 {
+.details h2 {
   color: #024e9d; /* Set the color of the heading */
-  padding-block: 50px; /* Add vertical padding (top and bottom) to the heading */
+  padding-bottom: 20px;/* Add vertical padding (top and bottom) to the heading */
+  text-align: start;
+  margin: 0 auto;
+  width: 500px;
 }
 
 /* Styling for images within the details section */
 .details img {
-  width: 500px; /* Set the width of the images */
+  width: 430px; /* Set the width of the images */
   border-radius: 10px; /* Round the corners of the images */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow around the images */
+  border: 1px solid gray; /* Add a shadow around the images */
+}
+
+.changeimage{
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  
+}
+
+.changeimage img{
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.changeimage img:hover{
+  transition: 1s; /* Smooth transition for the hover effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Increase shadow depth on hover */
 }
 
 /* Styling for paragraphs within the details section */
@@ -23,7 +55,76 @@
   font-size: 15px; /* Set the font size for paragraphs */
   color: rgb(45, 45, 45); /* Set the color of the text */
   font-weight: 400; /* Set the font weight */
-  padding: 20px; /* Add padding around the text */
-  width: 400px; /* Set the width of the paragraphs */
+  padding: 0 20px; /* Add padding around the text */
+  width: 550px; /* Set the width of the paragraphs */
   margin: 0 auto; /* Center the paragraphs horizontally */
+  text-align: start;
+  line-height: 30px;
+}
+
+.specs h2{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+}
+
+.specs img{
+  width: 800px;
+  border: none;
+}
+
+@media screen and (max-width: 968px) {
+  .details h2 {
+    
+    width: 370px;
+  }
+
+  .details img {
+    width: 400px; /* Set the width of the images */
+  }
+
+  .details p {
+    
+    width: 400px; /* Set the width of the paragraphs */
+    
+  }
+
+  .changeimage img{
+    width: 120px;
+    margin-top: 35px;
+    
+  }
+
+  .specs img{
+    width: 700px;
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width: 975px) {
+  .changeimage{
+    
+    max-width: 400px;
+    
+    
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .specs img{
+    width: 600px;
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .specs img{
+    width: 400px;
+    border: none;
+  }
+  
 }

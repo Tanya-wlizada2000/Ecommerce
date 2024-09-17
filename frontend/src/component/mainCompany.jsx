@@ -8,14 +8,15 @@ const cardsData = [
   {
     id: 1,
     img: "hourglass.svg", // Image file for the card
-    head: "For more than 30 years", // Heading for the card
+    head: "For more than 11 years", // Heading for the card
     pragh: "we have been developing and manufacturing packaging solutions", // Paragraph text for the card
   },
   {
     id: 2,
-    img: "product-development.svg", // Image file for the card
-    head: "11 production sites", // Heading for the card
-    pragh: "produce flexible packaging for customers around the world we care about the environment and recycling", // Paragraph text for the card
+    img: "team.svg", // Image file for the card
+    head: "102 + employees", // Heading for the card
+    pragh:
+      "produce flexible packaging for customers around the world we care about the environment and recycling", // Paragraph text for the card
   },
 ];
 
@@ -23,8 +24,8 @@ const cardsData = [
 const data = [
   {
     id: 3,
-    img: "team.svg", // Image file for the card
-    head: "350 + employees", // Heading for the card
+    img: "product-development.svg", // Image file for the card
+    head: "11 production sites", // Heading for the card
     pragh: "create the perfect service for our customers", // Paragraph text for the card
   },
   {
@@ -45,17 +46,30 @@ const MainCompany = () => {
           {/* Main heading for the company section */}
           <h2>Company</h2>
           {/* Subheading describing the company's leadership in packaging */}
-          <h3>
-            Gualapack Group is the world leader in the flexible packaging production.
-          </h3>
+          <h3>Worldwide Trusted Packaging Supplier</h3>
           {/* Paragraph describing the company's products and commitment */}
           <p>
-            Our products are successfully used by manufacturing companies in various industries, ranging from food, cosmetics, and household chemicals to packaging for the pharmaceutical industry. 
-            <br /><br />
-            At Gualapack we are proud to offer a quality and functional product together with our customers, based on the experience with the flexible packaging we produce. We help companies optimize and improve their operating results.
-            <br /><br />
+            With 31 years experience in packaging field, DQ PACK embraces the
+            philosophy, aiming at striving to become the best partner from the
+            local market for global customers and suppliers. Our stand-up
+            pouches and printed roll stock films are exported to over 1200
+            customers from more than 140 countries and regions including USA,
+            UK, Mexico, Ukraine,
+            <br />
+            <br />
+            Turkey, Australia, Cameroon, Libya, Pakistan, etc., and are
+            particularly appreciated and highly trusted by our customers
+            worldwide. We also have partnered with many world’s renowned
+            beverage manufacturers to develop flexible packaging solutions. As a
+            leading flexible packaging company with self-run export right in the
+            local printing market, DQ PACK has set up branches in Malaysia and
+            Hong Kong respectively. learn more
+            <br />
+            <br />
             {/* Render NavbarButton with the title prop */}
-            <Link to="/incom"><NavbarButton title={"About the company"} /></Link>
+            <Link to="/incom">
+              <NavbarButton title={"About the company"} />
+            </Link>
           </p>
         </div>
         <div className="companyCards">

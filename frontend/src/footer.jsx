@@ -10,10 +10,10 @@ const Footer = () => {
             {/* First section: Logo and company description */}
             <div className="logoText">
               <Link to="/" className="navbar-logo"> {/* Link to home with logo class */}
-                Logo
+              <img src="/image.png" alt="" width={60}/>
               </Link>
               <h4>
-                Gualapack is a world leader in the production of <br />ready-made bags
+                DOY PACK is a world leader in the production of <br />ready-made bags
                 with closures and a global player <br />in flexible packaging.
               </h4>
               <p>
@@ -27,10 +27,19 @@ const Footer = () => {
               <h2>Product</h2>
               <ul>
                 <li>
-                  <Link to="/" className="links">Roll packaging</Link> {/* Link to roll packaging */}
+                  <Link to="/service1" className="links">Stand Up Pouch</Link> {/* Link to roll packaging */}
                 </li>
                 <li>
-                  <Link to="/" className="links">Ready-made packaging</Link> {/* Link to ready-made packaging */}
+                  <Link to="/service2" className="links">Spout Pouch</Link> {/* Link to ready-made packaging */}
+                </li>
+                <li>
+                  <Link to="/service3" className="links">Gusseted Pouch</Link> {/* Link to ready-made packaging */}
+                </li>
+                <li>
+                  <Link to="/service4" className="links">Roll Film</Link> {/* Link to ready-made packaging */}
+                </li>
+                <li>
+                  <Link to="/service5" className="links">Shaped & Transparent</Link> {/* Link to ready-made packaging */}
                 </li>
               </ul>
             </div>
@@ -40,16 +49,16 @@ const Footer = () => {
               <h2>Contact</h2>
               <div className="contact">
                 <h3>Telephone:</h3>
-                <Link to="/" className="links"> +380 542 701 520</Link> {/* Contact phone number */}
+                <Link to="/" className="links"> Tel: +8617 813 089921 </Link> 
+                <Link to="/" className="links"> WhatsApp: +7964 809 8632</Link> {/* Contact phone number */}
               </div>
               <div className="contact">
                 <h3>E-mail:</h3>
-                <Link to="/" className="links"> sales.ua@gualapack.com</Link> {/* Email address */}
-                <Link to="/" className="links">sales.pl@gualapack.com</Link> {/* Second email address */}
+                <Link to="/" className="links"> tajsteel567@gmail.com</Link> {/* Email address */}
               </div>
               <div className="contact">
-                <h3>Office address in Ukraine:</h3>
-                <p>40020, m. Sumy, Peremohy ave., 147/4</p> {/* Office address */}
+                <h3>Office address in China:</h3>
+                <p>Dongguang Country, Cangzhou<br/> City, Hebel Province, China</p> {/* Office address */}
               </div>
             </div>
 
@@ -57,7 +66,7 @@ const Footer = () => {
 
           {/* Last part: Footer bottom section */}
           <div className="lastpart">
-            <p>© 2024 “GUALAPACK UKRAINE” LLC</p> {/* Copyright notice */}
+            <p>DOY PACK Plastic Industry Co., Ltd.</p> {/* Copyright notice */}
             <Link to="/">Privacy Policy</Link> {/* Link to privacy policy */}
           </div>
         </div>

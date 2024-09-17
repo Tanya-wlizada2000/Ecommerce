@@ -1,10 +1,8 @@
 /* Styles for the slider container */
 .slider-container {
-  max-width: 1440px; /* Maximum width of the slider container */
   margin: 0 auto; /* Center the container horizontally */
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+  
 }
-
 /* Styles for the container holding social media icons */
 .iconsMedia {
   text-align: center; /* Center align the icons */
@@ -22,38 +20,7 @@
   transition: 1s;
 }
 
-/* Styles for each banner item */
-.bannerItem {
-  display: flex; /* Flexbox layout for banner items */
-  justify-content: space-around; /* Space items evenly */
-  align-items: center; /* Align items vertically */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  margin: 0 auto; /* Center the banner items horizontally */
-  padding: 2rem 0; /* Vertical padding */
-  color: white; /* Text color */
-  font-weight: 400; /* Default font weight */
-}
 
-/* Styles for images in banner items */
-.bannerItem img {
-  width: 30%; /* Set image width to 30% of the container */
-}
-
-/* Styles for headings in banner items */
-.bannerItem h1 {
-  font-size: 36px; /* Font size for headings */
-  font-weight: bold; /* Bold font weight */
-  
-  
-}
-
-/* Styles for paragraphs in banner items */
-.bannerItem p {
-  font-size: 20px; /* Font size for paragraphs */
-  font-weight: 600; /* Font weight for paragraphs */
-  margin: 20px auto 60px auto; /* Vertical margin for spacing */
-  width: 500px; /* Set width for paragraphs */
-}
 
 /* Styles for navbar buttons */
 .navbar-button {
@@ -73,66 +40,75 @@
   transition: 1s; /* Smooth transition for hover effect */
 }
 
-/* Custom styles for the react-slick slider dots */
 
-/* Hide default dot styles */
-.slick-dots {
-  bottom: 10px; /* Position of dots */
+
+/* VideoBackground.css */
+
+/* VideoBackground.css */
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex; /* Center content horizontally and vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }
 
-.slick-dots li button:before {
-  font-size: 12px; /* Size of the dots */
-  color: rgba(255, 255, 255, 0.75); /* Default color of dots */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  z-index: -1; /* Puts the video behind other content */
+  /* Add vendor prefixes for compatibility */
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  background: none;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #e5750f; /* Color of active dot */
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  color: white; /* Change text color for visibility */
+  text-align: center;
+  padding: 20px;
+  /* Adjust font size and padding for smaller screens */
 }
-
-/* Custom styles for dots container */
-.slick-dots {
-  display: flex !important; /* Ensure flexbox layout */
-  justify-content: center; /* Center the dots horizontally */
-}
-
-.slick-dots li {
-  margin: 0 5px; /* Space between dots */
-}
-
-.slick-dots li button {
-  border-radius: 50%; /* Make dots round */
-}
-
-/* Responsive styles for screens 900px and below */
-@media screen and (max-width: 900px) {
-  .bannerItem img {
-      width: 400px; /* Adjust image width for smaller screens */
+@media screen and (max-width: 1200px) {
+  .video-background {
+    width: 100%;
+    height: 60vh; /* Full viewport height */
+   
   }
-  .bannerItem h1 {
-      padding-top: 20px ;
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    font-size: 1.2rem;
+    padding: 10px;
   }
-  .bannerItem p {
-      font-size: 20px; /* Adjust font size for paragraphs */
-      font-weight: 600; /* Maintain font weight */
-      margin: 20px auto 60px auto; /* Adjust margin */
-      width: 400px; /* Adjust paragraph width */
+  .content h1 {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .content {
+    font-size: 1rem;
+    padding: 5px;
   }
 }
+
+
 
 @media screen and (max-width: 400px) {
-  .bannerItem img {
-      width: 300px; /* Adjust image width for smaller screens */
-  }
-  .bannerItem h1 {
-      padding-top: 30px ;
-  }
-  .bannerItem p {
-      font-size: 15px; /* Adjust font size for paragraphs */
-      font-weight: 600; /* Maintain font weight */
-      margin: 20px auto 60px auto; /* Adjust margin */
-      width: 350px; /* Adjust paragraph width */
-  }
-
   .navbar-button {
    margin-bottom: 30px;
   }

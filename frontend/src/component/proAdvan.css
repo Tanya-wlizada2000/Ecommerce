@@ -2,7 +2,6 @@
 .advan {
     margin: 0 auto; /* Center container horizontally */
     margin-top: 100px; /* Add top margin */
-    max-width: 1440px; /* Set maximum width of the container */
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Background gradient from dark blue to light blue */
 }
 

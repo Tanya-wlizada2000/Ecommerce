@@ -1,7 +1,7 @@
 /* Style for the main container of product items */
 .productItem {
     margin: 100px auto; /* Center the container horizontally with 100px margin on top and bottom */
-    max-width: 1440px; /* Limit the maximum width of the container */
+    
 }
 
 /* Style for the heading of product items */
@@ -28,14 +28,14 @@
 .productCardsItem {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align items vertically center */
+    border: 1px solid grey;
     border-radius: 10px; /* Rounded corners for the card */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect to the card */
     width: 500px; /* Set a fixed width for the card */
+    height: 300px;
 }
 
 /* Hover effect for product cards */
 .productCardsItem:hover {
-    margin-top: -20px; /* Slightly move the card up on hover */
     transition: 1s; /* Smooth transition for the hover effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Increase shadow depth on hover */
 }
@@ -44,6 +44,8 @@
 .productCardsItem img {
     width: 200px; /* Set fixed width for the image */
     height: 300px; /* Set fixed height for the image */
+    padding-top: 10px;
+ 
 }
 
 /* Style for the text container within product cards */
@@ -55,6 +57,7 @@
 .cartsText h2 {
     color: #024e9d; /* Set color for the heading text */
     font-size: 20px; /* Set font size for the heading */
+    text-align: start;
 }
 
 /* Style for paragraphs within the text container */

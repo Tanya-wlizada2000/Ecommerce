@@ -2,7 +2,7 @@ import "./product.css"; // Importing the CSS file for styling the ProductCarts c
 import { Link } from "react-router-dom"; // Importing Link from react-router-dom for navigation
 
 // ProductCarts component for displaying individual product cards
-const ProductCarts = ({ heading, pragh, image, id }) => {
+const ProductCarts = ({ heading, pragh, image, id, img1,img2,img3 }) => {
   return (
     <>
       {/* Link to navigate to the detailed view of the product */}

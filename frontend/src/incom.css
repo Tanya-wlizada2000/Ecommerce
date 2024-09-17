@@ -1,6 +1,5 @@
 /* Container for the 'About' section, centered with max-width and margin adjustments */
 .about {
-  max-width: 1440px;
   margin: 100px auto;
 }
 
@@ -16,13 +15,13 @@
 
 /* Styling for paragraph elements within '.Text' */
 .Text p {
-  padding: 30px; /* Padding around paragraphs */
+  padding:20px 30px; /* Padding around paragraphs */
   color: rgb(63, 57, 57); /* Text color */
 }
 
 /* Styling for heading 2 elements within '.Text' */
 .Text h2 {
-  padding: 10px 30px; /* Padding around the heading */
+  padding: 0 30px; /* Padding around the heading */
   color: #024e9d; /* Heading text color */
   font-size: 20px; /* Font size */
 }
@@ -30,7 +29,7 @@
 /* Container for the image and text in the 'About' section */
 .aboutImgText {
   display: flex; /* Flexbox for layout */
-  align-items: center; /* Center items vertically */
+  /* Center items vertically */
   justify-content: space-around; /* Space items evenly */
   margin: 100px auto; /* Centered with margin */
   padding: 30px; /* Padding around the content */

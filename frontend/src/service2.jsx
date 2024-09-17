@@ -2,61 +2,63 @@
 import { ProAdvan } from "./component/proAdvan";
 import { ProductCarts } from "./component/productCarts";
 import { Footer } from "./footer";
-import { Header } from "./header";
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallOutline } from "react-icons/io5";
+import { Navbar } from "./component/navBar";
+import { DetailsecHeader } from "./component/detailsheader";
+import { database } from "./db";
 
 // Sample data for products, but there are duplicate IDs which should be corrected
 export const carts = [
-  {
+ {/* {
     id: 1,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "Custom Printed Juice Bag",
+    pragh: "Retort Spout Pouch for Baby Food Packaging",
+    image: "/Group9.png",
   },
   {
     id: 2,
-    heading: "Ready-made ",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Food Grade ",
+    pragh: "Gualapack Pouch Stand Up Spout Bag For Juice",
+    image: "/Group10.png",
   },
   {
     id: 3,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Custom 200ml",
+    pragh: "Yogurt Packaging Stand up flat bottom Spout Pouch",
+    image: "/Group11.png",
   },
   {
     id: 4,
-    heading: "Ready-made ",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK 100% Food ",
+    pragh: "Grade 200g Stand Up Spout Pouch Fruit Puree Packaging Bag for Baby",
+    image: "/Group12.png",
   },
   {
     id: 5,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK OEM Design",
+    pragh: "125℃ Hot Filling Stand up pouch with spout",
+    image: "/Group13.png",
   },
   {
     id: 6,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Colorful",
+    pragh: "Design Doypack 140g Plastic Stand Up Spout Bag For Baby Food",
+    image: "/Group14.png",
   },
   {
     id: 7,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Custom Design",
+    pragh: "90g Stand Up Spout Pouch Plastic Doypack for Baby Food",
+    image: "/Group15.png",
   },
   {
     id: 8,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
-  },
+    heading: "DQ PACK No-Leaking",
+    pragh: "100g Yogurt Packaging Bag Colorful Design Doypack with Spout",
+    image: "/Group16.png",
+  },*/} 
 ];
 
 // Functional component for the Service2 page
@@ -69,10 +71,20 @@ const Service2Page = () => {
     });
   };
 
+  const getObjects = () => {
+    return database.slice(startIndex, endIndex);
+  };
+
+  let startIndex = 8;
+  let endIndex = 16;
+  const result = getObjects(database, startIndex, endIndex);
+
+
   return (
     <>
       {/* Render the Header component at the top of the page */}
-      <Header />
+      <Navbar/>
+      <DetailsecHeader />
 
       <div className="container">
         <div className="itemsContainer">
@@ -110,15 +122,16 @@ const Service2Page = () => {
 
           {/* Container for displaying product carts */}
           <div className="cartspro">
-            {carts.map((cart) => (
+            {result.map((cart) => (
               // Map through the carts array and render a ProductCarts component for each item
               <ProductCarts
                 key={cart.id} // Use id as the unique key for each item
                 id={cart.id}
                 cart={cart}
                 heading={cart.heading}
-                pragh={cart.pragh}
                 image={cart.image}
+                dis={cart.dis}
+                
               />
             ))}
           </div>
@@ -128,14 +141,18 @@ const Service2Page = () => {
             style={{
               margin: "20px 0",
               textAlign: "start",
-              fontSize: "20px",
+              fontSize: "16px",
               fontWeight: "400",
               padding: "30px",
               color: "#6d6d6d",
+              display:"flex",
+              justifyContent:"space-between",
+              alignItems: "center",
+              gap: "20px",
             }}
           >
             <p>
-              Layer or multi-layer laminate roll packaging has truly excellent
+              layer or multi-layer laminate, roll packaging has truly excellent
               properties. Among the practical characteristics, we can highlight
               the following: reliability and durability, lightness, excellent
               tightness and high barrier. Aesthetic properties include a neat
@@ -143,8 +160,11 @@ const Service2Page = () => {
               ketchup packaging; mayonnaise packaging; sauce packaging; juice
               packaging; puree packaging; packaging for liquid soap and
               toothpaste, etc. Laminated packaging is also soft lids and sachets
-              that protect the product from moisture and air. At the moment, it
-              is almost impossible to find a material that could compete with
+              that protect the product from moisture. 
+              </p>
+              
+              <p>
+              At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
               Gualapack for over eight years. Our equipment allows us to use

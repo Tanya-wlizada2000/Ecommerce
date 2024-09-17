@@ -97,7 +97,7 @@ const IncomPage = () => {
             {/* Section for alternating image and text */}
             <div className="aboutImgText">
               <div className="aboutImg">
-                <img src="aboutimg.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
+                <img src="DOC-20231130-WA0014..pdf-image-001.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
               </div>
               <div className="Text">
                 <h2>About Gualapack Ukraine</h2>
@@ -133,17 +133,17 @@ const IncomPage = () => {
               </div>
 
               <div className="aboutImg">
-                <img src="aboutimg.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
+                <img src="DOC-20231130-WA0014..pdf-image-003.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
               </div>
             </div>
 
             {/* Further repeated sections */}
             <div className="aboutImgText">
               <div className="aboutImg">
-                <img src="aboutimg.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
+                <img src="DOC-20231130-WA0014..pdf-image-004.jpg" alt="aboutimg.jpg" /> {/* Image with alt text */}
               </div>
               <div className="Text">
-                <h2>About Gualapack Ukraine</h2>
+                <h2>About DoyPak</h2>
                 <p>
                   Continuous development is our priority. Gualapack specializes
                   in the production of high-performance flexible packaging.
@@ -165,7 +165,7 @@ const IncomPage = () => {
               </div>
 
               <div className="textlast">
-                <Link to="/" className="navbar-logo">Logo</Link> {/* Navigation link */}
+                <Link to="/" className="navbar-logo"><img src="image.png" alt="" width={60}/></Link> {/* Navigation link */}
                 <p>Download company presentation in PDF format:</p>
                 <a href="/path-to-your-file-1" download>
                   <NavbarButton title={title} /> {/* Custom button component */}

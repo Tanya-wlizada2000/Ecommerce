@@ -6,6 +6,9 @@ import { IncomPage } from "./incom"; // Importing the IncomPage component, which
 import { Service1Page } from "./service1"; // Importing the Service1Page component for the first service page
 import { Service2Page } from "./service2"; // Importing the Service2Page component for the second service page
 import { Routes, Route } from "react-router-dom"; // Importing Routes and Route components from react-router-dom for routing
+import { Service3Page } from "./service3";
+import { Service4Page } from "./service4";
+import { Service5Page } from "./service5";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route exact path="/service1" element={<Service1Page />} />
         {/* Route for the second service page */}
         <Route exact path="/service2" element={<Service2Page />} />
+        <Route exact path="/service3" element={<Service3Page />} />
+        <Route exact path="/service4" element={<Service4Page/>} />
+        <Route exact path="/service5" element={<Service5Page />} />
         {/* Route for the incom page */}
         <Route exact path="/incom" element={<IncomPage />} />
         {/* Route for the certificate page */}

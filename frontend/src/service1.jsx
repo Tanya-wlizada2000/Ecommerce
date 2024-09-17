@@ -2,65 +2,70 @@
 import { ProAdvan } from "./component/proAdvan";
 import { ProductCarts } from "./component/productCarts";
 import { Footer } from "./footer";
-import { Header } from "./header";
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallOutline } from "react-icons/io5";
+import { Navbar } from "./component/navBar";
+import { DetailsHeader } from "./component/detailsheader";
+import { database } from "./db";
 
 // Sample data for the products to be displayed
 export const carts = [
-  {
+ {/*{
     id: 1,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "China Custom Doypack Zipper Bag for",
+    pragh: "Candy Sweet Chocolate Food Packaging",
+    image: "/Group1.png",
   },
   {
     id: 2,
-    heading: "Ready-made ",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Food Grade ",
+    pragh: "Stand Up Zipper Pouch 500g Plastic Packaging Bag",
+    image: "/Group2.png",
   },
   {
     id: 3,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK 5L Stand Up Pouch",
+    pragh: "with Special Sport for Adblue Liquid Packaging Bag Plastic Doypack",
+    image: "/Group3.png",
   },
   {
     id: 4,
-    heading: "Ready-made ",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Sanrio Colorful Packaging Bag Stand Up",
+    pragh: "Heat Seal Pouch For Laundry Detergent",
+    image: "/Group4.png",
   },
   {
     id: 5,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Colorful",
+    pragh: " Design 105g Fruit Puree Stand Up Spout Pouch Food Grade Plastic Packaging Bag",
+    image: "/Group5.png",
   },
   {
     id: 6,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK Custom Printed",
+    pragh: "590ML Heat Seal Packaging Bag Plastic Liquid Stand Up Pouch For Laundry Detergent",
+    image: "/Group6.png",
   },
   {
     id: 7,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
+    heading: "DQ PACK OEM Design",
+    pragh: "Plastic Packaging Bag Matte Surface Laundry Detergent Doypack 1.5L Heat Seal Stand Up Pouch",
+    image: "/Group7.png",
   },
   {
     id: 8,
-    heading: "Roll Packaging",
-    pragh: "Our products are successfully used by manufacturing companies in various industries.",
-    image: "/cat-preview-1-1.png",
-  },
+    heading: "DQ PACK 198g Dog Food",
+    pragh: "Packaging Plastic Bag Stand Up Zipper Pouch Doypack",
+    image: "/Group8.png",
+  },*/} 
 ];
 
 // Functional component for the Service1 page
+
+
 const Service1Page = () => {
+
   // Function to scroll to the top of the page with a smooth scrolling effect
   const scrollToTop = () => {
     window.scrollTo({
@@ -68,11 +73,24 @@ const Service1Page = () => {
       behavior: "smooth", // Adds a smooth scrolling effect
     });
   };
+  
+
+  const getObjects = () => {
+    return database.slice(startIndex, endIndex);
+  };
+
+  let startIndex = 0;
+  let endIndex = 8;
+  const result = getObjects(database, startIndex, endIndex);
+
+
+
 
   return (
     <>
       {/* Render the Header component at the top of the page */}
-      <Header />
+      <Navbar />
+      < DetailsHeader />
 
       <div className="container">
         <div className="itemsContainer">
@@ -110,15 +128,19 @@ const Service1Page = () => {
 
           {/* Container for displaying product carts */}
           <div className="cartspro">
-            {carts.map((cart) => (
+            {result.map((cart) => (
               // Map through the carts array and render a ProductCarts component for each item
               <ProductCarts
                 key={cart.id} // Use id as the unique key for each item
                 id={cart.id}
                 cart={cart}
                 heading={cart.heading}
-                pragh={cart.pragh}
                 image={cart.image}
+                dis={cart.dis}
+                img1=""
+                img2=""
+                img3=""
+
               />
             ))}
           </div>
@@ -128,10 +150,14 @@ const Service1Page = () => {
             style={{
               margin: "20px 0",
               textAlign: "start",
-              fontSize: "20px",
+              fontSize: "16px",
               fontWeight: "400",
               padding: "30px",
               color: "#6d6d6d",
+              display:"flex",
+              justifyContent:"space-between",
+              alignItems: "center",
+              gap: "20px",
             }}
           >
             <p>
@@ -143,8 +169,11 @@ const Service1Page = () => {
               ketchup packaging; mayonnaise packaging; sauce packaging; juice
               packaging; puree packaging; packaging for liquid soap and
               toothpaste, etc. Laminated packaging is also soft lids and sachets
-              that protect the product from moisture and air. At the moment, it
-              is almost impossible to find a material that could compete with
+              that protect the product from moisture. 
+              </p>
+              
+              <p>
+              At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
               Gualapack for over eight years. Our equipment allows us to use

@@ -1,14 +1,15 @@
 /* Main container for items with flexible layout */
 .mainItem {
     display: flex; /* Use flexbox layout */
-    align-items: center; /* Vertically center items */
-    justify-content: space-around; /* Space items evenly */
+    gap : -1em; 
+    justify-content: center; /* Space items evenly */
     margin: 100px auto !important; /* Center container horizontally with a margin of 100px on top and bottom */
 }
 
 /* Text container styling */
 .mainText {
-    padding: 50px; /* Add padding around the text */
+    padding:0 0 0 50px ;
+    padding-top: 20px ; /* Add padding around the text */
 }
 
 /* Heading 2 styles within .mainText */
@@ -37,14 +38,16 @@
 /* Container for company cards with flexible layout */
 .companyCards {
     display: flex; /* Use flexbox layout */
-    justify-content: space-around; /* Space cards evenly */
-    margin: 0 auto; /* Center container horizontally */
+    justify-content: center;/* Space cards evenly */
+    margin: 0 auto;/* Center container horizontally */
 }
 
 /* Individual card styling */
 .cards {
-    padding: 1rem; /* Add padding inside cards */
+    padding-top: 20px ; /* Add padding inside cards */
     margin: 0 auto; /* Center cards horizontally */
+    width: 280px;
+    height: 300px;
 }
 
 /* Styling for images within company cards */
@@ -68,9 +71,19 @@
     color: #024e9d; /* Set text color to a shade of blue */
 }
 
+.company-details p {
+   font-size: 14px;
+}
+
 /* Responsive design for screens smaller than 900px */
 @media screen and (max-width: 900px) {
     .mainItem {
         flex-wrap: wrap; /* Allow items to wrap onto multiple lines on smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .companyCards {
+        flex-wrap: wrap; /* Center container horizontally */
     }
 }
