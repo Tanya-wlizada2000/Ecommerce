@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* General Navbar Styles */
 .navbar {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background for the navbar */
@@ -12,6 +13,8 @@
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between items */
     align-items: center; /* Align items vertically */
+    max-width: 1440px;
+    margin:0 auto;
 }
 
 /* Navbar Logo Styles */
@@ -19,7 +22,15 @@
     font-size: 1.5rem; /* Font size for the logo */
     text-decoration: none; /* Remove underline from links */
 }
-
+.doy-pack-text{
+  text-align: end;  
+  color: white; /* White text */
+  font-size: 40px; /* Adjust as needed */
+  font-weight: 400; /* Bold text */
+  font-style: italic; /* Italic style */
+  font-family: "Lobster Two", sans-serif;
+   
+}
 /* Navbar Toggler for Mobile */
 .navbar-toggler {
     display: none; /* Hidden by default; shown on mobile */

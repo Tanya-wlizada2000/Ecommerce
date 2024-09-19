@@ -9,16 +9,6 @@ import { Navbar } from "./component/navBar";
 import { DetailfiveHeader } from "./component/detailsheader";
 import { database } from "./db";
 
-// Sample data for the products to be displayed
-export const carts = [
-  {/*{
-    id: 1,
-    heading: "DQ PACK Fruit Vegetable",
-    pragh: "Vent Bag Transparent Plastic Packaging Bag with Hole",
-    image: "/Group32.png",
-  },*/} 
-
-];
 
 // Functional component for the Service1 page
 const Service5Page = () => {
@@ -98,7 +88,8 @@ const Service5Page = () => {
           {/* Description section with inline styling */}
           <div
             style={{
-              margin: "20px 0",
+              maxWidth:"1440px",
+              margin: "20px auto",
               textAlign: "start",
               fontSize: "16px",
               fontWeight: "400",
@@ -126,10 +117,10 @@ const Service5Page = () => {
               At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
-              Gualapack for over eight years. Our equipment allows us to use
+             DOY PACK for over eight years. Our equipment allows us to use
               extrusion technology, which gives the film an excellent appearance
               and provides ideal transparency. This also ensures high elasticity
-              and puncture resistance. In addition, Gualapack provides
+              and puncture resistance. In addition,DOY PACK provides
               rotogravure printing and modern lamination services, which allows
               you to create your unique design.
             </p>

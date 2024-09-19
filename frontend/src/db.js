@@ -102,7 +102,7 @@ export const database = [
   {
     id: 10,
     heading: "DOY PACK Food Grade Gualapack Pouch Stand Up Spout Bag For Juice ",
-    pragh: "DOY PACK Stand up spout pouch is a relatively new form of packaging, is the jelly packaging bags. Compared with ordinary forms of packaging, the biggest advantage is portability, spout packaging bag can be easily put into backpacks or even pockets. Gualapack spout pouch is one of the most popular products of DQPACK, which is made of PET/Foil/PET/PE laminated structure, and can also have other specifications, such as 2-layer and 3-layer materials, depending on the packaged products, there are different materials to choose from: PET, PE, NY, AL, PA, VMPET, RCPP, LLDPE, etc.,",
+    pragh: "DOY PACK Stand up spout pouch is a relatively new form of packaging, is the jelly packaging bags. Compared with ordinary forms of packaging, the biggest advantage is portability, spout packaging bag can be easily put into backpacks or even pockets. Doypack spout pouch is one of the most popular products of DOYPACK, which is made of PET/Foil/PET/PE laminated structure, and can also have other specifications, such as 2-layer and 3-layer materials, depending on the packaged products, there are different materials to choose from: PET, PE, NY, AL, PA, VMPET, RCPP, LLDPE, etc.,",
     image: "/Group10.png",
     img1: "/Group10.png",
     img2: "/Frame 11.png",
@@ -122,7 +122,7 @@ export const database = [
     id: 12,
     heading:
       "DOY PACK 100% Food Grade 200g Stand Up Spout Pouch Fruit Puree Packaging Bag for Baby",
-    pragh: "We are DOY PACK, who has more than 32 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
+    pragh: "We are DOY PACK, who has more than 11 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
     image: "/Group12.png",
     img1: "/Group12.png",
     img2: "/Frame 10.png",
@@ -131,7 +131,7 @@ export const database = [
   {
     id: 13,
     heading: "DOY PACK OEM Design 125℃ Hot Filling Stand up pouch with spout",
-    pragh: "We are DOY PACK, who has more than 30 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.<br/><br/>MaterialPET+AL+NY+RPE <br/>Size8.4 X 13.9cm +5 cm <br/>nozzle inner diameter8.6 mm",
+    pragh: "We are DOY PACK, who has more than 11 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.<br/><br/>MaterialPET+AL+NY+RPE <br/>Size8.4 X 13.9cm +5 cm <br/>nozzle inner diameter8.6 mm",
     image: "/Group13.png",
     img1: "/Group13.png",
     img2: "/Frame 47.png",
@@ -141,7 +141,7 @@ export const database = [
     id: 14,
     heading:
       "DOY PACK Colorful Design DOY PACK 140g Plastic Stand Up Spout Bag For Baby Food",
-    pragh: "We are DOY PACK, who has more than 30 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
+    pragh: "We are DOY PACK, who has more than 11 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
     image: "/Group14.png",
     img1: "/Group14.png",
     img2: "/Frame 49.png",
@@ -151,7 +151,7 @@ export const database = [
     id: 15,
     heading:
       "DOY PACK Custom Design 90g Stand Up Spout Pouch Plastic DOY PACK for Baby Food",
-    pragh: "We are DOY PACK, who has more than 30 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
+    pragh: "We are DOY PACK, who has more than 11 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
     image: "/Group15.png",
     img1: "/Group15.png",
     img2: "/Frame 1.png",
@@ -161,7 +161,7 @@ export const database = [
     id: 16,
     heading:
       "DOY PACK No-Leaking 100g Yogurt Packaging Bag Colorful Design DOY PACK with Spout",
-    pragh: "We are DOY PACK, who has more than 30 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
+    pragh: "We are DOY PACK, who has more than 11 years experience in flexible packaging. Spout pouch is our main product and hot seller.We have special formular can reduce the percentage of  bottom leakage.We provide OEM&ODM service,can meet the different needs of customers.<br/><br/>The retort pouch can withstand 125℃ High temperature sterilization. Ordinary spout pouch can only be filled at 98 degrees celsius.The bag is made of aluminum, which is one of the high barrier properties and can extend the shelf life of the product.<br/><br/>The lid also use retort material, not easily deformed during cooking. Lid color,shape,size can be customized.",
     image: "/Group16.png",
     img1: "/Group16.png",
     img2: "/Frame 57.png",
@@ -171,7 +171,7 @@ export const database = [
   {
     id: 17,
     heading: "Custom Coffee Bean Powder Packaging Bag Flat Bottom Pouch",
-    pragh: "DOY PACK, a leading provider of customized coffee packaging solutions. With more than 30 years of flexible packaging manufacturing expertise, we offer competitive prices, superior quality, and a wide range of customization options to meet your specific needs.<br/><br/>Our diverse range of coffee packaging types includes flat bottom bags, self-standing zipper bags, four-side seal bags, accordion bags, composite packaging roll films, and more. Crafted from high-barrier composite plastic or paper-plastic materials, our packaging boasts exceptional properties such as gas barrier, moisture barrier, light shielding, and fragrance preservation. Whether you require fully automatic, semi-automatic, or manual filling, our packaging is designed to cater to your unique production processes.<br/><br/>If you’re ready to elevate your brand with personalized coffee packaging that stands out, look no further than DOY PACK. Contact us today to receive the latest quote. With DOY PACK, your coffee products are sure to make a lasting impression on your customers.",
+    pragh: "DOY PACK, a leading provider of customized coffee packaging solutions. With more than 11 years of flexible packaging manufacturing expertise, we offer competitive prices, superior quality, and a wide range of customization options to meet your specific needs.<br/><br/>Our diverse range of coffee packaging types includes flat bottom bags, self-standing zipper bags, four-side seal bags, accordion bags, composite packaging roll films, and more. Crafted from high-barrier composite plastic or paper-plastic materials, our packaging boasts exceptional properties such as gas barrier, moisture barrier, light shielding, and fragrance preservation. Whether you require fully automatic, semi-automatic, or manual filling, our packaging is designed to cater to your unique production processes.<br/><br/>If you’re ready to elevate your brand with personalized coffee packaging that stands out, look no further than DOY PACK. Contact us today to receive the latest quote. With DOY PACK, your coffee products are sure to make a lasting impression on your customers.",
     image: "/Group17.png",
     img1: "/Group17.png",
     img2: "/Frame 51.png",

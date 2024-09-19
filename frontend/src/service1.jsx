@@ -9,57 +9,7 @@ import { Navbar } from "./component/navBar";
 import { DetailsHeader } from "./component/detailsheader";
 import { database } from "./db";
 
-// Sample data for the products to be displayed
-export const carts = [
- {/*{
-    id: 1,
-    heading: "China Custom Doypack Zipper Bag for",
-    pragh: "Candy Sweet Chocolate Food Packaging",
-    image: "/Group1.png",
-  },
-  {
-    id: 2,
-    heading: "DQ PACK Food Grade ",
-    pragh: "Stand Up Zipper Pouch 500g Plastic Packaging Bag",
-    image: "/Group2.png",
-  },
-  {
-    id: 3,
-    heading: "DQ PACK 5L Stand Up Pouch",
-    pragh: "with Special Sport for Adblue Liquid Packaging Bag Plastic Doypack",
-    image: "/Group3.png",
-  },
-  {
-    id: 4,
-    heading: "DQ PACK Sanrio Colorful Packaging Bag Stand Up",
-    pragh: "Heat Seal Pouch For Laundry Detergent",
-    image: "/Group4.png",
-  },
-  {
-    id: 5,
-    heading: "DQ PACK Colorful",
-    pragh: " Design 105g Fruit Puree Stand Up Spout Pouch Food Grade Plastic Packaging Bag",
-    image: "/Group5.png",
-  },
-  {
-    id: 6,
-    heading: "DQ PACK Custom Printed",
-    pragh: "590ML Heat Seal Packaging Bag Plastic Liquid Stand Up Pouch For Laundry Detergent",
-    image: "/Group6.png",
-  },
-  {
-    id: 7,
-    heading: "DQ PACK OEM Design",
-    pragh: "Plastic Packaging Bag Matte Surface Laundry Detergent Doypack 1.5L Heat Seal Stand Up Pouch",
-    image: "/Group7.png",
-  },
-  {
-    id: 8,
-    heading: "DQ PACK 198g Dog Food",
-    pragh: "Packaging Plastic Bag Stand Up Zipper Pouch Doypack",
-    image: "/Group8.png",
-  },*/} 
-];
+
 
 // Functional component for the Service1 page
 
@@ -148,7 +98,8 @@ const Service1Page = () => {
           {/* Description section with inline styling */}
           <div
             style={{
-              margin: "20px 0",
+              maxWidth:"1440px",
+              margin: "20px auto",
               textAlign: "start",
               fontSize: "16px",
               fontWeight: "400",
@@ -176,10 +127,10 @@ const Service1Page = () => {
               At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
-              Gualapack for over eight years. Our equipment allows us to use
+             DOY PACK for over eight years. Our equipment allows us to use
               extrusion technology, which gives the film an excellent appearance
               and provides ideal transparency. This also ensures high elasticity
-              and puncture resistance. In addition, Gualapack provides
+              and puncture resistance. In addition,DOY PACK provides
               rotogravure printing and modern lamination services, which allows
               you to create your unique design.
             </p>

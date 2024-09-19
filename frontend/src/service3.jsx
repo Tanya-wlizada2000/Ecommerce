@@ -9,52 +9,6 @@ import { Navbar } from "./component/navBar";
 import { DetailthirdHeader } from "./component/detailsheader";
 import { database } from "./db";
 
-// Sample data for the products to be displayed
-export const carts = [
- {/* {
-    id: 1,
-    heading: "Custom Coffee Bean Powder",
-    pragh: "Packaging Bag Flat Bottom Pouch",
-    image: "/Group17.png",
-  },
-  {
-    id: 2,
-    heading: "DQ PACK Custom Coffee ",
-    pragh: "Bean Food Packaging Bag with one-way valve",
-    image: "/Group18.png",
-  },
-  {
-    id: 3,
-    heading: "DQ PACK Food Grade",
-    pragh: "Plastic Packaging Bag Flat Bottom Zipper Doypack for Drink Powder",
-    image: "/Group19.png",
-  },
-  {
-    id: 4,
-    heading: "DQ PACK Qual-Seal ",
-    pragh: "Flat Bottom Bag Plastic Stand Up Packaging Pouch With  Zipper Lock",
-    image: "/Group20.png",
-  },
-  {
-    id: 5,
-    heading: "DQ PACK 250g 1kg Flat",
-    pragh: "Bottom Pouch for Coffee Bean Powder Packaging",
-    image: "/Group21.png",
-  },
-  {
-    id: 6,
-    heading: "DQ PACK Flat Bottom Pouch",
-    pragh: "Hot Sale Pet Food Bag",
-    image: "/Group22.png",
-  },
-  {
-    id: 7,
-    heading: "Sunflower Seeds Snack",
-    pragh: "Packaging Bag Qual-Seal Flat Bottom Pouch With Window",
-    image: "/Group23.png",
-  },
-  */} 
-];
 
 // Functional component for the Service1 page
 const Service3Page = () => {
@@ -133,7 +87,8 @@ const Service3Page = () => {
           {/* Description section with inline styling */}
           <div
             style={{
-              margin: "20px 0",
+              maxWidth:"1440px",
+              margin: "20px auto",
               textAlign: "start",
               fontSize: "16px",
               fontWeight: "400",
@@ -161,10 +116,10 @@ const Service3Page = () => {
               At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
-              Gualapack for over eight years. Our equipment allows us to use
+             DOY PACK for over eight years. Our equipment allows us to use
               extrusion technology, which gives the film an excellent appearance
               and provides ideal transparency. This also ensures high elasticity
-              and puncture resistance. In addition, Gualapack provides
+              and puncture resistance. In addition,DOY PACK provides
               rotogravure printing and modern lamination services, which allows
               you to create your unique design.
             </p>

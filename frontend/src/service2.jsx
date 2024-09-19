@@ -9,57 +9,6 @@ import { Navbar } from "./component/navBar";
 import { DetailsecHeader } from "./component/detailsheader";
 import { database } from "./db";
 
-// Sample data for products, but there are duplicate IDs which should be corrected
-export const carts = [
- {/* {
-    id: 1,
-    heading: "Custom Printed Juice Bag",
-    pragh: "Retort Spout Pouch for Baby Food Packaging",
-    image: "/Group9.png",
-  },
-  {
-    id: 2,
-    heading: "DQ PACK Food Grade ",
-    pragh: "Gualapack Pouch Stand Up Spout Bag For Juice",
-    image: "/Group10.png",
-  },
-  {
-    id: 3,
-    heading: "DQ PACK Custom 200ml",
-    pragh: "Yogurt Packaging Stand up flat bottom Spout Pouch",
-    image: "/Group11.png",
-  },
-  {
-    id: 4,
-    heading: "DQ PACK 100% Food ",
-    pragh: "Grade 200g Stand Up Spout Pouch Fruit Puree Packaging Bag for Baby",
-    image: "/Group12.png",
-  },
-  {
-    id: 5,
-    heading: "DQ PACK OEM Design",
-    pragh: "125℃ Hot Filling Stand up pouch with spout",
-    image: "/Group13.png",
-  },
-  {
-    id: 6,
-    heading: "DQ PACK Colorful",
-    pragh: "Design Doypack 140g Plastic Stand Up Spout Bag For Baby Food",
-    image: "/Group14.png",
-  },
-  {
-    id: 7,
-    heading: "DQ PACK Custom Design",
-    pragh: "90g Stand Up Spout Pouch Plastic Doypack for Baby Food",
-    image: "/Group15.png",
-  },
-  {
-    id: 8,
-    heading: "DQ PACK No-Leaking",
-    pragh: "100g Yogurt Packaging Bag Colorful Design Doypack with Spout",
-    image: "/Group16.png",
-  },*/} 
-];
 
 // Functional component for the Service2 page
 const Service2Page = () => {
@@ -139,7 +88,8 @@ const Service2Page = () => {
           {/* Description section with inline styling */}
           <div
             style={{
-              margin: "20px 0",
+              maxWidth:"1440px",
+              margin: "20px auto",
               textAlign: "start",
               fontSize: "16px",
               fontWeight: "400",
@@ -167,10 +117,10 @@ const Service2Page = () => {
               At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
-              Gualapack for over eight years. Our equipment allows us to use
+             DOY PACK for over eight years. Our equipment allows us to use
               extrusion technology, which gives the film an excellent appearance
               and provides ideal transparency. This also ensures high elasticity
-              and puncture resistance. In addition, Gualapack provides
+              and puncture resistance. In addition,DOY PACK provides
               rotogravure printing and modern lamination services, which allows
               you to create your unique design.
             </p>

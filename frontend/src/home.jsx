@@ -4,7 +4,6 @@ import { Header } from "./header"
 import { MainPage } from "./mainpart";
 import { FaArrowUp } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
-import { useState } from "react";
 
 const HomePage =()=>{
 

@@ -66,8 +66,10 @@ const Footer = () => {
 
           {/* Last part: Footer bottom section */}
           <div className="lastpart">
-            <p>DOY PACK Plastic Industry Co., Ltd.</p> {/* Copyright notice */}
+            <div className="lastpartcon">
+            <p>Dongguang Yalei Plastic Industry Co., Ltd.</p> {/* Copyright notice */}
             <Link to="/">Privacy Policy</Link> {/* Link to privacy policy */}
+            </div>
           </div>
         </div>
       </div>

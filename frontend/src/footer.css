@@ -1,5 +1,7 @@
 /* Container for the footer items */
 .footerItem {
+  max-width: 1440px;
+  margin: 0 auto;
   margin-top: 100px; /* Add space above the footer */
   display: flex; /* Use flexbox to arrange items in a row */
   justify-content: space-between; /* Distribute space between items */
@@ -51,6 +53,12 @@
 .lastpart {
   margin: 0 auto; /* Center the last part of the footer horizontally */
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+
+}
+
+.lastpartcon{
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Vertically align items to the center */
   justify-content: space-between; /* Distribute space between items */

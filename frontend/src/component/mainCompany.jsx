@@ -49,21 +49,31 @@ const MainCompany = () => {
           <h3>Worldwide Trusted Packaging Supplier</h3>
           {/* Paragraph describing the company's products and commitment */}
           <p>
-            With 31 years experience in packaging field, DQ PACK embraces the
-            philosophy, aiming at striving to become the best partner from the
-            local market for global customers and suppliers. Our stand-up
-            pouches and printed roll stock films are exported to over 1200
-            customers from more than 140 countries and regions including USA,
-            UK, Mexico, Ukraine,
+            Dongguang Yalei Plastic Industry Co., Ltd. It was founded in 2012
+            and is located in Dongguan County, Hebei Province. This is a modern
+            private enterprise that combines research and development, design,
+            film production, printing, compounding and package production. The
+            company was recognized as a member of the Hebei Plastic Packaging
+            Association in the first half of 2015. The company occupies an area
+            of ​6,000 square meters, including 3,500 square meters of standard
+            clean workshops and 15 million yuan in fixed assets. In 2014, it
+            passed the national quality certification of food packaging QS and
+            the record production qualification of export packaging of food
+            products. There are 102 employees, including 6 office employees, 9
+            production management employees, 5 R&D employees and 6 quality
+            managers. There are 10 network sellers and 5 outstanding designers.
             <br />
             <br />
-            Turkey, Australia, Cameroon, Libya, Pakistan, etc., and are
-            particularly appreciated and highly trusted by our customers
-            worldwide. We also have partnered with many world’s renowned
-            beverage manufacturers to develop flexible packaging solutions. As a
-            leading flexible packaging company with self-run export right in the
-            local printing market, DQ PACK has set up branches in Malaysia and
-            Hong Kong respectively. learn more
+            The company mainly produces food packaging bags, daily chemical
+            packaging bags, three-sided sealed bags, four-sided sealed bags,
+            eight-sided sealed bags, delivery bags, zippered bags, pouch bags,
+            vacuum bags, plastic bags. aluminum foil, kraft paper, paper window
+            bags, which produces and processes retort packaging, packaging for
+            basket and dog food, liquid fertilizer bags, rice bags, flour bags,
+            PVC labels, shrink labels, bopp film, PVC film, CCP film, aluminized
+            film, etc. The company has a complete modern quality management
+            system. The integrity, strength and quality of products of Dongguang
+            Yalei Plastic Industry Co., Ltd.
             <br />
             <br />
             {/* Render NavbarButton with the title prop */}

@@ -9,57 +9,7 @@ import { Navbar } from "./component/navBar";
 import { DetailfourHeader } from "./component/detailsheader";
 import { database } from "./db";
 
-// Sample data for the products to be displayed
-export const carts = [
-  {/*{
-    id: 1,
-    heading: "Custom Ice Pop Popsicle",
-    pragh: "Wrapper Plastic frozen Food Packaging Film Roll",
-    image: "/Group24.png",
-  },
-  {
-    id: 2,
-    heading: "DQ PACK Custom Printed Food ",
-    pragh: "Potato Chips Snack Wrapper Packaging Roll Film",
-    image: "/Group25.png",
-  },
-  {
-    id: 3,
-    heading: "DQ PACK Food Grade",
-    pragh: "Automatic Packaging Film Plastic Roll Stock Film For Cookie Snacks Back Seal Packing Bag",
-    image: "/Group26.png",
-  },
-  {
-    id: 4,
-    heading: "DQ PACK OEM Design ",
-    pragh: "Food Grade Cookie Packaging Film PET Roll Stock Film",
-    image: "/Group27.png",
-  },
-  {
-    id: 5,
-    heading: "DQ PACK Matte BOPP",
-    pragh: "Croissant Food Packaging Film Roll",
-    image: "/Group28.png",
-  },
-  {
-    id: 6,
-    heading: "OEM Pet Fruit Candy",
-    pragh: "Snack Chocolate Packaging Plastic Myalr Roll Film",
-    image: "/Group29.png",
-  },
-  {
-    id: 7,
-    heading: "DQ PACK China Supplier",
-    pragh: "Plastic Packaging Film Snack Roll Stock Film",
-    image: "/Group30.png",
-  },
-  {
-    id: 8,
-    heading: "Snack Packaging film",
-    pragh: "Packaging Plastic Roll Film Automatic Packaging Film",
-    image: "/Group31.png",
-  },*/} 
-];
+
 
 // Functional component for the Service1 page
 const Service4Page = () => {
@@ -76,7 +26,7 @@ const Service4Page = () => {
     return database.slice(startIndex, endIndex);
   };
 
-  let startIndex = 24;
+  let startIndex = 23;
   let endIndex = 31;
   const result = getObjects(database, startIndex, endIndex);
 
@@ -140,7 +90,8 @@ const Service4Page = () => {
           {/* Description section with inline styling */}
           <div
             style={{
-              margin: "20px 0",
+              maxWidth:"1440px",
+              margin: "20px auto",
               textAlign: "start",
               fontSize: "16px",
               fontWeight: "400",
@@ -168,10 +119,10 @@ const Service4Page = () => {
               At the moment, it is almost impossible to find a material that could compete with
               polymers in reliability. Another advantage of this material is its
               affordable price. Flexible roll packaging has been manufactured by
-              Gualapack for over eight years. Our equipment allows us to use
+             DOY PACK for over eight years. Our equipment allows us to use
               extrusion technology, which gives the film an excellent appearance
               and provides ideal transparency. This also ensures high elasticity
-              and puncture resistance. In addition, Gualapack provides
+              and puncture resistance. In addition,DOY PACK provides
               rotogravure printing and modern lamination services, which allows
               you to create your unique design.
             </p>

@@ -5,6 +5,7 @@
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Background gradient from dark blue to light blue */
 }
 
+
 /* Heading section within the .advan container */
 .advanHeading {
     text-align: center; /* Center align text */
@@ -24,11 +25,13 @@
     display: flex; /* Use flexbox layout */
     align-items: center; /* Vertically center items */
     justify-content: space-around; /* Distribute items evenly with space around */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Individual advantage card styling */
 .advanCarts {
-    margin: 0 auto; /* Center card horizontally */
+    margin: 0 50px; /* Center card horizontally */
     padding: 10px 0 60px 0; /* Add vertical padding */
 }
 
